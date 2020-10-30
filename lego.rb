@@ -9,7 +9,7 @@ class LegoHat
   end
 
   def to_s
-    "a #{size_word} #{colour} #{@style}"
+    "a #{@size} #{@colour} #{@style}"
   end
 end
 
