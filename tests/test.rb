@@ -81,6 +81,8 @@ class TestLego < Minitest::Test
     def test_right_item_words_for_figure_with_right_item_and_no_left_item_and_no_hat
         actual = @lego_figure_no_left_item_no_hat.right_item_words
         expected = ", who is holding a 8 gram light in the right hand"
+        puts "The difference is..."
+        puts "#{diff(expected, actual)}"
         assert_equal(expected, actual)
     end
 
@@ -91,9 +93,10 @@ class TestLego < Minitest::Test
     end 
 
     def test_right_item_words_for_figure_with_no_items_and_no_hat
-        actual = @lego_figure_no_items_no_hat.right_item_words
-        expected = ""
-        assert_equal(expected, actual)
+        #actual = @lego_figure_no_items_no_hat.right_item_words
+        #expected = ""
+        #assert_equal(expected, actual)
+        assert_empty(@lego_figure_no_items_no_hat.right_item_words)
     end
 
     # Should I test for red hat also 
