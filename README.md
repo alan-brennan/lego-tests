@@ -2,7 +2,7 @@ In this workshop you'll continue writing unit tests in Ruby using MiniTest.
 
 ## Instructions
 
-1. Clone the repo to your MacBook.
+1. Clone the repo to your MacBook
 
 2. Take a look at the code in `lego.rb`.
 
